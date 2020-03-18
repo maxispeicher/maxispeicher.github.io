@@ -1,6 +1,7 @@
 .contact-section {
   padding: 5rem 0 5rem 0;
   background: linear-gradient(to bottom, #{fade-out($black, .9)} 0%,#{fade-out($black, .5)} 75%,$black 100%), url('../img/bg-signup.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -9,7 +10,7 @@
     border-bottom: 0.25rem solid $primary;
     h4 {
       font-size: 0.8rem;
-      font-family: 'Varela Round';
+      font-family: 'Varela Round', sans-serif;
       text-transform: uppercase;
       letter-spacing: 0.15rem;
     }
