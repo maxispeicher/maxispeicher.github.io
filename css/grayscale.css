@@ -223,7 +223,11 @@
 }
 
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 5rem 0 5rem 0;
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .contact-section .card {
@@ -252,18 +256,20 @@
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: #fff;
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #64a19d;
 }
 
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: #467370;
+  background: #f2f2f2;
 }
 
 .contact-section .social a:active {
-  color: #fff;
+  color: #467370;
+  background: #f2f2f2;
 }
 
 body {
