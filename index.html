@@ -22,6 +22,11 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
+    <!-- Terminal script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/jquery.terminal@2.x.x/js/jquery.terminal.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal@2.x.x/css/jquery.terminal.min.css"/>
+
 </head>
 
 <body id="page-top">
@@ -39,13 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
                 </li>
             </ul>
         </div>
@@ -68,6 +67,26 @@
                     <div>
                         <h1 class="text-uppercase">Maximilian<br>Speicher</h1>
                         <h2 class="text-white-50">Student B.Sc. Maschinenwesen</h2>
+                        <div class="social d-flex justify-content-center">
+                            <a href="https://www.linkedin.com/in/maximilian-speicher-446696133/" target="_blank"
+                               class="mx-2">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.xing.com/profile/Maximilian_Speicher3/cv" target="_blank" class="mx-2">
+                                <i class="fab fa-xing"></i>
+                            </a>
+                            <a href="https://github.com/maxispeicher" target="_blank" class="mx-2">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://gitlab.com/speicher.maximilian" target="_blank" class="mx-2">
+                                <i class="fab fa-gitlab"></i>
+                            </a>
+                            <a href="https://stackoverflow.com/users/10608063/maximilian-speicher?tab=profile"
+                               target="_blank"
+                               class="mx-2">
+                                <i class="fab fa-stack-overflow"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,21 +94,30 @@
     </div>
 </header>
 
-<!-- About Section -->
-<section id="about" class="about-section text-center">
+<!-- Terminal Section -->
+<section id="technologies" class="terminal-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-                <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours
-                    right now, simply download the template on
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is
-                    open source, and you can use it for any purpose, personal or commercial.</p>
+                <h2 class="text-white text-center mb-4">Technology Stack and Expertises</h2>
+                <br>
+                <div id="terminal-container">
+                    <div id="terminal">
+                    </div>
+                </div>
             </div>
         </div>
-        <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
+
+    <script>
+        $('#terminal').terminal(function (command) {
+            this.echo(command);
+        }, {
+            greetings: "Welcome to my personal console!"
+        });
+    </script>
 </section>
+
 
 <!-- Projects Section -->
 <section id="projects" class="projects-section bg-light">
@@ -215,14 +243,16 @@
         <br>
         <a href="mailto:maximilian.speicher@tum.de">maximilian.speicher@tum.de</a>
         <br><br>
-        <p>Based on David Miller's <a href="https://github.com/BlackrockDigital/startbootstrap-grayscale">Template</a>
+        <p>
+            Based on David Miller's <a href="https://github.com/BlackrockDigital/startbootstrap-grayscale" target="_blank">Template</a>
+            <br>
+            Image credits <a href="https://stocksnap.io/author/4440" target="_blank">Negative Space</a>
         </p>
         <small>&copy; 2020, Maximilian Speicher</small>
     </div>
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Plugin JavaScript -->
