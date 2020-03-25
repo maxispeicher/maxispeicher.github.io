@@ -1,13 +1,42 @@
 .terminal-section {
-  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .1)} 75%,#{fade-out($black, .2)} 100%);
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, $black 0%,#{fade-out($black, .2)} 40%,  #f8f9fa 100%);
   p {
     margin-bottom: 5rem;
   }
 }
 
+#terminal-bar {
+  height: 25px;
+  line-height: 25px;
+  background: rgb(30, 30, 30);
+  border-radius: 5px 5px 0 0;
+  padding: 0 10px 0 10px;
+
+  #bullet-container {
+    float: right;
+  }
+
+  .bar-bullet {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    display: inline-block;
+  }
+  #green-bullet {
+    background: #00ca4e;
+  }
+  #yellow-bullet {
+    background: #ffbd44;
+  }
+  #red-bullet {
+    background: #ff605c;
+  }
+}
+
 #terminal {
-  height: 400px;
-  border-radius: 10px;
+  height: 500px;
+  border-radius: 0 0 5px 5px;
 }
 
 #terminal-container {
