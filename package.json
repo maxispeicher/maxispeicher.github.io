@@ -1,11 +1,11 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
+    "title": "Maximilian Speicher",
+    "name": "maximilian-speicher-cv",
     "version": "5.0.9",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "description": "A personal page of Maximilian Speicher.",
     "keywords": [
         "css",
         "sass",
@@ -14,21 +14,8 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/grayscale",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
-    },
     "dependencies": {
+        "@babel/runtime": "^7.9.2",
         "@fortawesome/fontawesome-free": "5.12.1",
         "bootstrap": "4.4.1",
         "jquery": "3.4.1",
@@ -37,6 +24,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.9.0",
+        "@babel/plugin-transform-runtime": "^7.9.0",
         "@babel/preset-env": "^7.9.0",
         "browser-sync": "2.26.7",
         "del": "5.1.0",

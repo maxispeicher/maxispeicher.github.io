@@ -19,9 +19,8 @@ const pkg = require('./package.json');
 
 // Set the banner content
 const banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
+  ' * Maximilian Speicher,\n',
+  ' * GitHub Page\n',
   ' */\n',
   '\n'
 ].join('');
@@ -104,7 +103,7 @@ function js() {
       '!./js/*.min.js'
     ])
       .pipe(babel({presets: ['@babel/preset-env']}))
-    .pipe(uglify())
+    .pipe(uglify({mangle: {toplevel: true}}))
     .pipe(header(banner, {
       pkg: pkg
     }))
