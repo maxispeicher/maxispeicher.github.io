@@ -50,6 +50,11 @@
         color: white;
       }
     }
+    .fa-home {
+      &:hover {
+        color: fade-out($white, .25);
+      }
+    }
     &.navbar-shrink {
       background-color: $white;
       .navbar-brand {
@@ -69,6 +74,11 @@
           color: $primary;
           outline: none;
           border-bottom: 0.25rem solid $primary;
+        }
+      }
+      .fa-home {
+        &:hover {
+          color: $primary;
         }
       }
     }

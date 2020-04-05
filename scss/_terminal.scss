@@ -3,6 +3,18 @@
   p {
     margin-bottom: 5rem;
   }
+  hr {
+    width: 75%;
+  }
+
+  .vanishing_line{
+    display:block;
+    border:none;
+    color:white;
+    height:2px;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 280, from($primary), to(#fff));
+    margin-bottom: 1rem;
+  }
 }
 
 #terminal-bar {
