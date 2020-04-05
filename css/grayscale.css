@@ -385,7 +385,7 @@
   border: none;
   color: white;
   height: 2px;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 110, from(#64a19d), to(#fff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 110, from(#64a19d), to(#f8f9fa));
 }
 
 .contact-section {
