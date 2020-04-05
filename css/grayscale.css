@@ -288,7 +288,7 @@
   border: none;
   color: white;
   height: 2px;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 280, from(#64a19d), to(#fff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 280, from(#64a19d), to(#f8f9fa));
   margin-bottom: 1rem;
 }
 
@@ -357,7 +357,7 @@
   border: none;
   color: white;
   height: 2px;
-  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 60, from(#64a19d), to(#fff));
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 60, from(#64a19d), to(#f8f9fa));
 }
 
 .education-section {
