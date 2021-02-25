@@ -7,28 +7,28 @@ class Skill {
         this.skill_name = name;
         this.skill_level = level;
     }
-    
 }
 
 const skill_levels = [
     {
         level: 'Beginner',
-        color: 'grey'
-    },
-    {
-        level: 'Intermediate',
         color: 'red'
     },
     {
-        level: 'Experienced',
+        level: 'Intermediate',
         color: 'orange'
     },
     {
-        level: 'Mastering',
+        level: 'Experienced',
         color: 'teal'
+    },
+    {
+        level: 'Mastering',
+        color: 'green'
     }
 ];
 const skills = [
+    new Skill("Amazon Web Services", 2),
     new Skill("Python", 3),
     new Skill("Java", 2),
     new Skill("Bash", 0),
@@ -39,13 +39,12 @@ const skills = [
     new Skill("C", 2),
     new Skill("C++", 2),
     new Skill("Javascript", 1),
-    new Skill("Typescript", 0),
+    new Skill("Typescript", 1),
     new Skill("Docker", 2),
-    new Skill("Cloud Computing", 0),
+    new Skill("Cloud Computing", 1),
     new Skill("Tensorflow", 1),
     new Skill("Spring Boot", 1),
-    new Skill("Angular", 0),
-    new Skill("C", 2)
+    new Skill("Angular", 0)
 ];
 skills.sort((a, b) => (a.skill_name > b.skill_name) ? 1 : ((b.skill_name > a.skill_name) ? -1 : 0));
 
@@ -102,18 +101,37 @@ $('#terminal').terminal(function (command) {
         this.echo(fun_facts[index]);
     } else if (command === 'Show me the ultimate answer to everything!') {
         this.echo("The answer to the great question of live, the universe and everything is ...");
-        setTimeout(() => { this.echo("."); }, 500);
-        setTimeout(() => { this.echo("."); }, 1000);
-        setTimeout(() => { this.echo("."); }, 1500);
-        setTimeout(() => { this.echo("."); }, 2000);
-        setTimeout(() => { this.echo("."); }, 2500);
-        setTimeout(() => { this.echo("."); }, 3000);
-        setTimeout(() => { this.echo("."); }, 3500);
-        setTimeout(() => { this.echo("[[bg;green;white]                                          ]"); }, 4995);
-        setTimeout(() => { this.echo("[[bg;green;white]                    42                    ]"); }, 5000);
-        setTimeout(() => { this.echo("[[bg;green;white]                                          ]"); }, 5005);
-    }
-    else {
+        setTimeout(() => {
+            this.echo(".");
+        }, 500);
+        setTimeout(() => {
+            this.echo(".");
+        }, 1000);
+        setTimeout(() => {
+            this.echo(".");
+        }, 1500);
+        setTimeout(() => {
+            this.echo(".");
+        }, 2000);
+        setTimeout(() => {
+            this.echo(".");
+        }, 2500);
+        setTimeout(() => {
+            this.echo(".");
+        }, 3000);
+        setTimeout(() => {
+            this.echo(".");
+        }, 3500);
+        setTimeout(() => {
+            this.echo("[[bg;green;white]                                          ]");
+        }, 4995);
+        setTimeout(() => {
+            this.echo("[[bg;green;white]                    42                    ]");
+        }, 5000);
+        setTimeout(() => {
+            this.echo("[[bg;green;white]                                          ]");
+        }, 5005);
+    } else {
         this.echo("Unknown command. Please use 'help' to see the available commands.");
     }
 }, {
