@@ -46,7 +46,7 @@ const skills = [
     new Skill("Spring", 0),
     new Skill("Angular", 0)
 ];
-skills.sort((a, b) => (a.skill_name > b.skill_name) ? 1 : ((b.skill_name > a.skill_name) ? -1 : 0));
+skills.sort((a, b) => (a.skill_level > b.skill_level) ? -1 : ((b.skill_level > a.skill_level) ? 1 : (a.skill_name > b.skill_name) ? 1 : ((b.skill_name > a.skill_name) ? -1 : 0)));
 
 const fun_facts = [
     "Banging your head against a wall for one hour burns 150 calories.",
