@@ -27,9 +27,11 @@
             data-blockingmode="auto" type="text/javascript"></script>
     <script data-cookieconsent="ignore">
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
+
         gtag("consent", "default", {
             ad_storage: "denied",
             analytics_storage: "denied",
@@ -401,13 +403,39 @@
             <br>
             Inspiration credits <a href="https://delsner.github.io/" target="_blank">Daniel Elsner</a>
             <br>
-<!--            <script id="CookieDeclaration"-->
-<!--                    src="https://consent.cookiebot.com/642a7f4b-f5ce-4fee-9a0f-6abf11232a81/cd.js"-->
-<!--                    type="text/javascript" async></script>-->
+            <button type="button" id="cookieDeclarationButton" class="btn btn-primary" data-toggle="modal"
+                    data-target="#cookieModal">
+                Cookie Declaration
+            </button>
+
         </p>
+
         <small>&copy; 2021, Maximilian Speicher</small>
     </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cookieModalLabel">Cookie Declaration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <script id="CookieDeclaration"
+                        src="https://consent.cookiebot.com/642a7f4b-f5ce-4fee-9a0f-6abf11232a81/cd.js"
+                        type="text/javascript" async></script>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

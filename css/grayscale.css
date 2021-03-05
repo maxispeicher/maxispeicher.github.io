@@ -271,6 +271,21 @@
   background-color: #467370 !important;
 }
 
+#cookieDeclarationButton {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  color: #64a19d;
+  cursor: pointer;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 100%;
+}
+
+#cookieDeclarationButton:hover {
+  color: #467370;
+}
+
 .terminal-section {
   padding: 5rem 0;
 }
