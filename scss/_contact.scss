@@ -17,8 +17,11 @@
     hr {
       border-color: $primary;
       border-width: 0.25rem;
-      width: 3rem;
+      width: 5rem;
       margin: auto;
+      height: 0.15rem;
+      color: $primary;
+      opacity: 0.75;
     }
   }
   .social {

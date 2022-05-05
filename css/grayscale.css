@@ -385,8 +385,11 @@
 .contact-section .card hr {
   border-color: #64a19d;
   border-width: 0.25rem;
-  width: 3rem;
+  width: 5rem;
   margin: auto;
+  height: 0.15rem;
+  color: #64a19d;
+  opacity: 0.75;
 }
 .contact-section .social {
   margin-top: 5rem;
