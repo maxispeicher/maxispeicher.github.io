@@ -28,7 +28,7 @@ const skill_levels = [
     }
 ];
 const skills = [
-    new Skill("Amazon Web Services", 2),
+    new Skill("Amazon Web Services", 3),
     new Skill("Python", 3),
     new Skill("Java", 2),
     new Skill("Bash", 1),
@@ -38,8 +38,8 @@ const skills = [
     new Skill("Git", 2),
     new Skill("C", 1),
     new Skill("C++", 1),
-    new Skill("JavaScript", 0),
-    new Skill("TypeScript", 0),
+    new Skill("JavaScript", 1),
+    new Skill("TypeScript", 1),
     new Skill("Docker", 2),
     new Skill("Cloud Computing", 2),
     new Skill("TensorFlow", 1),

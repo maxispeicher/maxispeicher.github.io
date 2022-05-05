@@ -158,6 +158,10 @@ footer {
   margin-bottom: 0
 }
 
+.timeline .timeline-heading a {
+  text-decoration: none;
+}
+
 @media (min-width: 320px) {
   .timeline:before {
     margin-bottom: 7rem;

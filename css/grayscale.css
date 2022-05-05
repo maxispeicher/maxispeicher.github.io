@@ -142,12 +142,14 @@
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  margin-bottom: 0.75rem;
 }
 .masthead h2 {
   font-family: "Varela Round", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: 0.3rem;
+  margin-bottom: 0.75rem;
 }
 @media (min-width: 300px) {
   .masthead h1 {
@@ -162,7 +164,7 @@
   }
   .masthead h2 {
     font-size: 1.2rem;
-    line-height: 1.2rem;
+    line-height: 1.25rem;
   }
   .masthead .img-circle {
     height: 225px;
@@ -182,7 +184,7 @@
   }
   .masthead h2 {
     font-size: 1.3rem;
-    line-height: 1.3rem;
+    line-height: 1.35rem;
   }
   .masthead .img-circle {
     height: 250px;
@@ -196,7 +198,7 @@
   }
   .masthead h2 {
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
   }
   .masthead .img-circle {
     height: 275px;
@@ -214,8 +216,8 @@
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
   }
   .masthead .img-circle {
     height: 350px;
@@ -282,7 +284,7 @@
 #terminal-bar {
   height: 25px;
   line-height: 25px;
-  background: #1e1e1e;
+  background: rgb(30, 30, 30);
   border-radius: 5px 5px 0 0;
   padding: 0 10px 0 10px;
 }
@@ -384,6 +386,7 @@
   border-color: #64a19d;
   border-width: 0.25rem;
   width: 3rem;
+  margin: auto;
 }
 .contact-section .social {
   margin-top: 5rem;
@@ -554,6 +557,10 @@ footer {
 
 .timeline .timeline-body > p, .timeline .timeline-body > ul {
   margin-bottom: 0;
+}
+
+.timeline .timeline-heading a {
+  text-decoration: none;
 }
 
 @media (min-width: 320px) {
