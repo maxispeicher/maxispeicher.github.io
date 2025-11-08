@@ -32,16 +32,19 @@ const skills = [
     new Skill("Python", 3),
     new Skill("Java", 1),
     new Skill("Bash", 1),
-    new Skill("Kotlin", 0),
+    new Skill("Kotlin", 1),
     new Skill("Git", 2),
     new Skill("JavaScript", 2),
     new Skill("TypeScript", 2),
     new Skill("Docker", 2),
     new Skill("Cloud Computing", 2),
-    new Skill("TensorFlow", 0),
     new Skill("IoT", 2),
     new Skill("FastAPI", 3),
-    new Skill("Angular", 1)
+    new Skill("Angular", 2),
+    new Skill("React", 1),
+    new Skill("Spark", 2),
+    new Skill("SQL", 2),
+    new Skill("NoSQL", 2),
 ];
 skills.sort((a, b) => (a.skill_level > b.skill_level) ? -1 : ((b.skill_level > a.skill_level) ? 1 : (a.skill_name > b.skill_name) ? 1 : ((b.skill_name > a.skill_name) ? -1 : 0)));
 
